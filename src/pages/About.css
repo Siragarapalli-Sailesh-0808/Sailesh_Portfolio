@@ -1,0 +1,326 @@
+/**
+ * About Page Styles
+ */
+
+.about-page {
+  padding-top: 80px;
+}
+
+/* Page Hero */
+.page-hero {
+  padding: 4rem 0 3rem;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.05), rgba(139, 92, 246, 0.05));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.page-hero-content {
+  text-align: center;
+}
+
+.page-title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  margin-bottom: 0.5rem;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+}
+
+/* Section Headers */
+.section-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-label {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Biography Section */
+.bio-section {
+  background: rgba(10, 15, 44, 0.3);
+}
+
+.bio-content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.bio-image {
+  position: relative;
+}
+
+.profile-placeholder {
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.2), rgba(139, 92, 246, 0.2));
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(79, 70, 229, 0.3);
+  box-shadow: var(--shadow-glow);
+}
+
+.profile-icon {
+  font-size: 8rem;
+}
+
+.bio-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-primary);
+}
+
+.bio-text p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.bio-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bio-detail {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+}
+
+.detail-icon {
+  font-size: 1.5rem;
+}
+
+.bio-detail a {
+  color: var(--color-accent-primary);
+  transition: color var(--transition-fast);
+}
+
+.bio-detail a:hover {
+  color: var(--color-accent-secondary);
+}
+
+/* Timeline Section */
+.timeline-section {
+  background: rgba(10, 15, 44, 0.2);
+}
+
+/* Skills Detailed Section */
+.skills-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.skill-category {
+  background: var(--color-bg-card);
+  border-radius: 16px;
+  padding: 2.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.category-title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: var(--color-accent-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.category-title::before {
+  content: '';
+  width: 4px;
+  height: 1.5rem;
+  background: var(--gradient-primary);
+  border-radius: 2px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem 3rem;
+}
+
+/* Achievements Section */
+.achievements-section {
+  background: rgba(10, 15, 44, 0.3);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-card {
+  text-align: center;
+  padding: 2.5rem 2rem;
+  transition: all var(--transition-normal);
+}
+
+.achievement-icon {
+  font-size: 3.5rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.achievement-card h3 {
+  font-size: 1.25rem;
+  color: var(--color-text-primary);
+  margin-bottom: 1rem;
+}
+
+.achievement-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.achievement-card:hover {
+  border-color: var(--color-accent-primary);
+  box-shadow: var(--shadow-glow);
+}
+
+/* CV Section */
+.cv-section {
+  padding-bottom: 0;
+}
+
+.cv-card {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.1), rgba(139, 92, 246, 0.1));
+  border: 2px solid rgba(79, 70, 229, 0.2);
+}
+
+.cv-card h2 {
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  margin-bottom: 1rem;
+}
+
+.cv-card p {
+  font-size: 1.15rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .bio-content {
+    grid-template-columns: 250px 1fr;
+    gap: 3rem;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3rem 0 2rem;
+  }
+
+  .bio-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .profile-placeholder {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .profile-icon {
+    font-size: 6rem;
+  }
+
+  .bio-text {
+    text-align: center;
+  }
+
+  .bio-details {
+    align-items: center;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .skill-category {
+    padding: 2rem 1.5rem;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-card {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .page-subtitle {
+    font-size: 1rem;
+  }
+
+  .bio-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .bio-text p {
+    font-size: 1rem;
+  }
+
+  .profile-icon {
+    font-size: 5rem;
+  }
+
+  .category-title {
+    font-size: 1.25rem;
+  }
+
+  .achievement-icon {
+    font-size: 3rem;
+  }
+}
