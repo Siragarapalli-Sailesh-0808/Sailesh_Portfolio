@@ -55,6 +55,19 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
+          <button 
+            className="resume-btn"
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/Sailesh_Siragarapalli_Resume.pdf';
+              link.download = 'Sailesh_Siragarapalli_Resume.pdf';
+              document.body.appendChild(link);
+              link.click();
+              document.body.removeChild(link);
+            }}
+          >
+            Resume
+          </button>
           <ThemeToggle />
         </div>
 

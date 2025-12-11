@@ -216,11 +216,21 @@ const About = () => {
           <div className="cv-card card reveal">
             <h2>Want to know more?</h2>
             <p>
-              Download my CV to get a complete overview of my experience, 
-              education, skills, and projects.
+              Download my resume to get a complete overview of my experience, 
+              education, skills, projects, and certifications.
             </p>
-            <button className="btn btn-primary">
-              Download CV
+            <button 
+              className="btn btn-primary"
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/Sailesh_Siragarapalli_Resume.pdf';
+                link.download = 'Sailesh_Siragarapalli_Resume.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+            >
+              Download Resume
               <span className="arrow">↓</span>
             </button>
           </div>

@@ -43,8 +43,13 @@ const Hero = () => {
   }, []);
 
   const handleDownloadCV = () => {
-    // Create a link to download CV
-    window.open('/Sailesh_Siragerapalli_CV.pdf', '_blank');
+    // Create a link to download resume
+    const link = document.createElement('a');
+    link.href = '/Sailesh_Siragarapalli_Resume.pdf';
+    link.download = 'Sailesh_Siragarapalli_Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -91,7 +96,7 @@ const Hero = () => {
                 <span className="arrow">→</span>
               </a>
               <button onClick={handleDownloadCV} className="btn btn-secondary">
-                Download CV
+                Download Resume
               </button>
             </div>
           </div>
