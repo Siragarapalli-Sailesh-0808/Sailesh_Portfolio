@@ -15,7 +15,7 @@ import Contact from './pages/Contact';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/Sailesh_Portfolio">
+      <Router basename="/">
         <div className="app">
           {/* Animated background blobs */}
           <div className="animated-bg">
